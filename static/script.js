@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         var girilenVeri = textInput.value;
         addMessage('user', girilenVeri);
-        const OPENAI_API_KEY = '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';
+        const OPENAI_API_KEY = 'OPENAI_API_KEY';
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 const headers = {
