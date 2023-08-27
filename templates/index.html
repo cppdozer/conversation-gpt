@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <link rel="icon" href="../static/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="container-item-sub-container choices" style=" border-radius: 10px;display: flex !important;justify-content: center;gap: 0!important;">
+                    <span>
+                        <input type="radio" id="model3.5" name="model" hidden checked/>
+                        <label class="button " for="model3.5">GPT 3.5</label>
+                        <input type="radio" id="model4" name="model" hidden/>
+                        <label class="button" for="model4">GPT 4</label>
+                    </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="text-input-wrapper">
+        <input type="text" id="textInput" placeholder="Send a message" oninput="checkInput(this)">
+        <button id="sendButton">
+            <svg viewBox="0 0 16 16" fill="#F5F5F5" class="send-icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"></path>
+            </svg>            
+        </button>
+    </div>     
+    <h1>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 3 Version</h1>
+</body>
+</html>

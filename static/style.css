@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343541;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-item.gpt {
+    background: rgb(68,70,84);
+}
+
+.container-item-sub-container {
+    width: 800px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background: rgb(25, 195, 125);
+}
+
+.text-input-wrapper {
+    height: 15vh;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;  /* Bu Ã¶zellik, text input ve butonun yan yana olmasÄ±nÄ± saÄŸlar */
+    width: 100%;
+    justify-content: center;
+    background: #3a3945;
+    box-shadow: 0px -20px 10px 0px #3a3945;
+    padding: 10px;
+}
+
+#textInput {
+    width: 710px;  /* GeniÅŸliÄŸi, buton iÃ§in yer bÄ±rakmak amacÄ±yla azaltÄ±ldÄ± */
+    height: 55px;
+    border: 1px solid #484756;
+    background-color: #484756;
+    color: #F5F5F5;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 10px 0 0 10px;  /* SaÄŸdaki kÃ¶ÅŸeler dÃ¼zeltilmiÅŸtir */
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+#textInput::placeholder {
+    color: rgba(245, 245, 245, 0.5);
+}
+
+#sendButton {
+    height: 55px;
+    border: 1px solid #484756;
+    background-color: #484756;  /* Arka plan rengi pembe olarak ayarlandÄ± */
+    color: #F5F5F5;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+    cursor: default;
+    transition: background-color 0.2s;
+}
+
+h1 {
+    position: fixed;
+    top: 94.8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.2px;
+    color: #acacac;
+    z-index: 30;
+}
+
+.send-icon {
+    width: 1.1em;
+    height: 1.1em;
+    opacity: 0.3;
+}
+
+.choices > span {
+    display: inline-flex;
+    gap: 0;
+    justify-content: center;
+    border-radius: 30px ;
+        background-color: #202123;
+
+}
+
+.button{
+    cursor: pointer;
+    border: none;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.choices > span > input:not(:checked) + label {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+.choices > span > input:is(:checked) + label{
+   background-color: #40414F;
+    border-radius: 30px;
+}
+
+
